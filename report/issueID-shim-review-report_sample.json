@@ -1,0 +1,30 @@
+{
+  "openId": "issueID",                                                                #申请代码签名的issue的ID号，社区自动生成 ,
+  "eulerAuditStatus": "COMPLETED",                                          #审核状态，两种类型的值（处理中、已完成），COMPLETED表示已完成，DOING表示进行中,
+  "eulerAuditResult"："PASS"                                                     #审核通过结果，两种类型的值（PASS、NoPASS）,
+  "eulerAuditResultDetails": 
+    {
+      "shim": 
+        {
+          "shim_version": "shim的版本号",                                     #例如15.8
+          "Reproducible": "YES",                                                  #表示是否可重复构建，YES或NO
+          "Patches": "YES",                                                          #表示是否有Patches，YES或NO
+          "shim_SBAT": "YES",                                                     #表示是否有防回滚，YES或NO
+          "shim_SBAT_entries": "shim的SBAT实体值",                    #例如shim.uos,1,Uos,shim,15,8,mail:secureboot@uniontech.com
+          "NX_Flag_Set": "YES",                                                  #表示是否设置NX编译选项，YES或NO
+        },
+      "certificate": 
+        {
+          "certificate_validity_period": "证书的有效期",                                #例如30 Years
+          "certificate_expiration_date": "证书过期时间",                               #例如Jan 16 00:00:00 2054 GMT
+          "certificate_private_key_storage": "证书私钥存储说明",                  #例如The key is kept in a red zone room with strict phyical and network isolation mechanisms. Conpliant with FIPS 140-2 Level 2 security standards
+        },
+      "grub": 
+        {
+          "grub_version": "grub的版本号",                                   #例如2.06.3-deb10u4
+          "grub_SBAT": "YES",                                                    #表示是否有防回滚，YES或NO
+          "grub_SBAT_entries": "grub的SBAT实体值",                   #例如grub,4
+        },
+    },
+  "sourceHash": "源码包的Hash值"                                          #采用SM3算法，计算文件的sm3哈希值，不带Z值，以base64形式返回
+}
