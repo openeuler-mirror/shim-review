@@ -1,0 +1,29 @@
+{
+  "openId": "#IAU03C",                                   
+  "eulerAuditStatus": "COMPLETED",
+  "eulerAuditResult"："PASS"                                                     
+  "eulerAuditResultDetails": 
+    {
+      "shim": 
+        {
+          "shim_version": "15.8",
+          "Reproducible": "YES",
+          "Patches": "YES",
+          "shim_SBAT": "YES",
+          "shim_SBAT_entries": "shim.uos,1,Uos,shim,15,8,mail:secureboot@uniontech.com",
+          "NX_Flag_Set": "YES",
+        },
+      "certificate": 
+        {
+          "certificate_validity_period": "30Years",
+          "certificate_expiration_date": "Jan 16 00:00:00 2054 GMT",
+          "certificate_private_key_storage": "The key is kept in a red zone room with strict phyical and network isolation mechanisms. Conpliant with FIPS 140-2 Level 2 security standards",
+      "grub": 
+        {
+          "grub_version": "debian's 2.06.3-deb10u4",
+          "grub_SBAT": "YES",
+          "grub_SBAT_entries": "grub,4",
+        },
+    },
+  "sourceHash": "66c7f0f462eeedd9d1f2d46bdc10e4e24167c4875cf2f7a2297da02b8f4ba8e0"
+}
